@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <div class="success-card" id="successCard">
+        <h2>🎉 Congratulations! 🎉</h2>
+        <p>You've won the game!</p>
+        <button id="playAgain">Play Again</button>
+    </div>
+    <div class="game-over-card" id="gameOverCard">
+        <h2>😢 Game Over! 😢</h2>
+        <p>You've run out of guesses</p>
+        <p>The number was: <span id="correctNumber"></span></p>
+        <button id="playAgainGameOver">Play Again</button>
+    </div>
+    <h1 class="gameHeading">Number Guessing Game</h1>
+    <div class="container">
+        <div class="desc">
+            <p>Try and guess a random number between 1 and 100</p>
+            <p>You have 10 attempts to guess the right number</p>
+        </div>
+       
+        <form action="" class="form">
+            <label for="GuessNum" class="GuessNum">Guess A Number </label>
+            <input type="number" name="" id="GuessNum" class="GuessNum">
+            <button id="submit">Submit Guess</button>
+        </form>
+        <div class="previous">
+             <p>Previous Guesses : <span class="pGuess"></span></p>
+             <p>Guesses Remaining: <span class="rRemain">10</span></p>
+             
+        </div>
+        <p class="lowORHi"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
